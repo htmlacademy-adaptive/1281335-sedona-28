@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>HTML Academy: Седона | Каталог отзывов</title>
   </head>
   <body class="page__body">
     <div class="container">
@@ -33,90 +33,54 @@
       </header>
       <main class="main-container">
         <h1 class="visually-hidden">Sity of Sedona</h1>
-        <div class="background background--index">
-          <img src="img/back-mobile.jpg" alt="Welcome to the gorgeous SEDONA" width="458" height="352">
+        <div class="background background--inner">
+          <img src="img/back-desktop.jpg" alt="Welcome to the gorgeous SEDONA" width="458" height="352">
         </div>
-        <!-- Краткая информация -->
-        <section class="about">
-          <div class="about__wrapper">
-            <h2 class="about__title visually-hidden">Краткая информация о Седоне</h2>
-            <p class="about__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-            <p class="about__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+        <section class="reviews">
+          <div class="reviews__wrapper">
+            <header class="reviews__header">
+              <h2 class="reviews__slogan">Фото и видео</h2>
+              <p class="reviews__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+                политике и экономике.</p>
+            </header>
+            <ul class="reviews__list">
+              <li class="reviews__item reviews-card">
+                <img class="reviews-card__image">
+                <h3 class="reviews-card__title">Неродные просторы</h3>
+                <p class="reviews-card__author-name"><span class="author">Автор фото: </span>Борис</p>
+                <b class="reviews-card__likes"></b>
+              </li>
+              <li class="reviews__item reviews-card">
+                <img class="reviews-card__image">
+                <h3 class="reviews-card__title">Местная растительность</h3>
+                <p class="reviews-card__author-name"><span class="author">Автор фото: </span>Сергей</p>
+                <b class="reviews-card__likes"></b>
+              </li>
+              <li class="reviews__item reviews-card">
+                <img class="reviews__image">
+                <h3 class="reviews-card__title">Дорога на север</h3>
+                <p class="reviews-card__author-name"><span class="author">Автор фото: </span>Петр</p>
+                <b class="reviews-card__likes"></b>
+              </li>
+              <li class="reviews__item reviews-card">
+                <img class="reviews-card__image">
+                <h3 class="reviews-card__title">Мост дьявола</h3>
+                <p class="reviews-card__author-name"><span class="author">Автор фото: </span>Антон</p>
+                <b class="reviews-card__likes"></b>
+              </li>
+            </ul>
           </div>
         </section>
-        <!-- Преимущества -->
-        <div class="advantages">
-          <!-- Строка 1 -->
-          <ul class="advantages__row advantages__row--image">
-            <li class="advantages__item advantages__item--cold">
-              <h3 class="advantages__title">Настоящий <br> городок</h3>
-              <span>— №1 —</span>
-              <p class="advantages__description">Седона — не аттракцион<br/>
-                для туристов, там течёт<br/>
-                своя жизнь</p>
-            </li>
-            <li class="advantages__image">
-              <img src="img/photo-city.jpg" alt="Городок Седона" width="800" height="384">
-            </li>
-          </ul>
-          <!-- Строка 2 -->
-          <ul class="advantages__row advantages__row--light">
-            <li class="advantages__item advantages__item--house">
-              <h3 class="advantages__type">Жилье</h3>
-              <p class="advantages__name">Рекомендуем пожить в&nbsp;настоящем мотеле,<br>всё как в кино!</p>
-            </li>
-            <li class="advantages__item advantages__item--eat">
-              <h3 class="advantages__type">Еда</h3>
-              <p class="advantages__name">Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!</p>
-            </li>
-            <li class="advantages__item advantages__item--souvenir">
-              <h3 class="advantages__type">Сувениры</h3>
-              <p class="advantages__name">Не только китайского,<br>но и настоящего местного производства!</p>
-            </li>
-          </ul>
-          <!-- Строка 3 -->
-          <ul class="advantages__row advantages__row--image">
-            <li class="advantages__image">
-              <img src="img/photo-bridge.jpg" alt="Мост дьявола" width="800" height="384">
-            </li>
-            <li class="advantages__item advantages__item--cold">
-              <h3 class="advantages__title">Там есть <br> мост дьявола</h3>
-              <span>— №2 —</span>
-              <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            </li>
-          </ul>
-          <!-- Строка 4 -->
-          <ul class="advantages__row advantages__row--shady">
-            <li class="advantages__item">
-              <h3 class="advantages__title">Небольшая площадь</h3>
-              <span>— №3 —</span>
-              <p class="advantages__description">Все достопримечательности находятся очень близко</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title">Красивая <br> дорога</h3>
-              <span>— №4 —</span>
-              <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title">Мало <br> туристов</h3>
-              <span>— №5 —</span>
-              <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
-            </li>
-          </ul>
-        </div>
-        <!-- Форма поиска гостиницы -->
-        <section class="entry">
-          <div class="entry__wrapper">
-            <h2 class="entry__title">Заинтересовались?</h2>
-            <p class="entry__description">
-              Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне
+        <section class="advertisement">
+          <div class="advertisement__wrapper">
+            <b class="advertisement__title">Все еще сомневаетесь?</b>
+            <p class="advertisement__description">
+              Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
             </p>
-            <a class="entry__button button" href="#">Найти гостиницу</a>
+            <video class="advertisement__video">
+              <source src="#">
+            </video>
           </div>
-        </section>
-        <!-- ---Карта--- -->
-        <section class="map">
-          <h2 class="visually-hidden">Google Map</h2>
         </section>
       </main>
       <footer class="main-footer">
